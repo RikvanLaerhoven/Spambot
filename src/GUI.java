@@ -33,14 +33,13 @@ public class GUI extends Application {
         TextField delayTextField = new TextField();
         TextField textTextField = new TextField();
         TextField amountTextField = new TextField();
-
         hbox.setSpacing(190);
         hbox.getChildren().addAll(new Label("Text"),new Label("Amount"),new Label("Delay"));
         spacing.getChildren().addAll(text, amount, delay);
-        spacing.setSpacing(50);
+        spacing.setSpacing(25);
         buttons.getChildren().add(startButton);
-
-
+        imageView.setFitHeight(500);
+        imageView.setFitWidth(500);
         delay.getChildren().addAll(delayTextField, startButton);
         text.getChildren().addAll(textTextField, stopButton);
         amount.getChildren().add(amountTextField);
@@ -52,17 +51,15 @@ public class GUI extends Application {
         stage.setScene(scene);
         stage.show();
 
-
         startButton.setOnAction(event -> {
             this.text = textTextField.getText();
             this.amount = Integer.parseInt(amountTextField.getText());
             this.delay = Integer.parseInt(delayTextField.getText());
             running = true;
-
+            System.out.println("startbutton");
         });
-        stopButton.setOnAction(event -> {
-            running = false;
-        });
+        stopButton.setOnAction(event -> { running = false;
+            System.out.println("stopbutton"); });
     }
 
     public void startGui() {

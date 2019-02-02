@@ -17,9 +17,8 @@ public class Spam {
     private Robot r;
     private int delay;
     private GUI gui = new GUI();
-    private boolean running = gui.getRunnig();
-
-
+    private boolean running = true;
+    
     public Spam(int amount, int delay, String text) {
         this.amount = amount;
         this.text = text;
@@ -30,12 +29,15 @@ public class Spam {
         gui.startGui();
         while (true){
             this.running = gui.getRunnig();
-            if (!running){
-                this.amount = gui.getAmount();
-                this.text = gui.getText();
-                this.delay = gui.getDelay();
-                this.running = gui.getRunnig();
-            }else {
+            if (running){
+//                amount = gui.getAmount();
+//                text = gui.getText();
+//                delay = gui.getDelay();
+//                running = gui.getRunnig();
+                amount = 100;
+                text = "hello world";
+                delay = 250;
+                running = true;
                 spam();
                 break;
             }
@@ -47,7 +49,7 @@ public class Spam {
     public void SingleSend(String singleText) {
         try {
             r = new Robot();
-            StringToCharacterlist(singleText);
+            stringToCharacterlist(singleText);
             System.out.println(word);
 
             for (int i = 0; i < word.size(); i++) {
@@ -171,7 +173,7 @@ public class Spam {
             this.running = gui.getRunnig();
             try {
                 r = new Robot();
-                StringToCharacterlist(text);
+                stringToCharacterlist(text);
                 System.out.println(word);
 
                 for (int k = 0; k < amount; k++) {
@@ -277,17 +279,15 @@ public class Spam {
                     r.keyPress(KeyEvent.VK_ENTER);
                     r.keyPress(KeyEvent.VK_ENTER);
                     r.keyPress(KeyEvent.VK_ENTER);
-
                     r.delay(delay);
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-
         }
     }
 
-    public void OldLoopSpam() {
+    public void oldLoopSpam() {
         try {
             r = new Robot();
             for (int i = 0; i < 100; i++) {
@@ -312,7 +312,7 @@ public class Spam {
         }
     }
 
-    public void StringToCharacterlist(String input) {
+    public void stringToCharacterlist(String input) {
         word.clear();
         int length = input.length();
         for (int i = 0; i < length; i++) {
@@ -322,7 +322,7 @@ public class Spam {
 
     }
 
-    public void Tableflip() {
+    public void tableflip() {
         SingleSend("/tableflip");
         SingleSend("/unflip");
     }

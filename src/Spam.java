@@ -18,7 +18,7 @@ public class Spam {
     private int delay;
     private GUI gui = new GUI();
     private boolean running = true;
-    
+
     public Spam(int amount, int delay, String text) {
         this.amount = amount;
         this.text = text;
@@ -30,14 +30,10 @@ public class Spam {
         while (true){
             this.running = gui.getRunnig();
             if (running){
-//                amount = gui.getAmount();
-//                text = gui.getText();
-//                delay = gui.getDelay();
-//                running = gui.getRunnig();
-                amount = 100;
-                text = "hello world";
-                delay = 250;
-                running = true;
+                amount = gui.getAmount();
+                text = gui.getText();
+                delay = gui.getDelay();
+                running = gui.getRunnig();
                 spam();
                 break;
             }

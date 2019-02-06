@@ -303,7 +303,7 @@ public class Spam {
             stringToCharacterlist(givenText);
             System.out.println(word);
 
-            for (int k = 0; k < givenAmount; k++) {
+            for (int k = 0; k < givenAmount + 1; k++) {
                 for (int i = 0; i < word.size(); i++) {
                     char character = word.get(i);
 

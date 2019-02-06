@@ -10,6 +10,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+    @author : Rik van Laerhoven
+ */
 public class GUI extends Application {
 
     private String textToPrint;
@@ -54,14 +57,14 @@ public class GUI extends Application {
 
         startButton.setOnAction(event -> {
             running = true;
-            while (running) {
+            //while (running) {
                 this.textToPrint = textTextField.getText();
                 this.amountToPrint = Integer.parseInt(amountTextField.getText());
                 this.delayToPrint = Integer.parseInt(delayTextField.getText());
                 spam = new Spam();
                 spam.newestSpam(amountToPrint, delayToPrint, textToPrint);
                 System.out.println("startbutton");
-            }
+           // }
         });
         stopButton.setOnAction(event -> { running = false;
             System.out.println("stopbutton"); });

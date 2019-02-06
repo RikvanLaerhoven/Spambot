@@ -37,7 +37,7 @@ public class Spam {
                 text = gui.getText();
                 delay = gui.getDelay();
                 running = gui.getRunnig();
-                spam();
+                //spam();
                 break;
             }
         }
@@ -166,7 +166,7 @@ public class Spam {
         }
     }
 
-    public void spam() {
+    public void SecondSpam() {
         while (running) {
             this.running = gui.getRunnig();
             try {
@@ -426,7 +426,7 @@ public class Spam {
     }
 
 
-    public void oldLoopSpam() {
+    public void FirstLoopSpam() {
         try {
             r = new Robot();
             for (int i = 0; i < 100; i++) {

@@ -267,6 +267,18 @@ public class Spam {
                             case '_':
                                 r.keyPress(KeyEvent.VK_UNDERSCORE);
                                 break;
+                            case '(':
+                                r.keyPress(KeyEvent.VK_OPEN_BRACKET);
+                                break;
+                            case ')':
+                                r.keyPress(KeyEvent.VK_CLOSE_BRACKET);
+                                break;
+                            case '+':
+                                r.keyPress(KeyEvent.VK_EQUALS);
+                                break;
+                            case '#':
+                                r.keyPress(KeyEvent.VK_NUMBER_SIGN);
+                                break;
                         }
                     }
                     r.keyPress(KeyEvent.VK_ENTER);

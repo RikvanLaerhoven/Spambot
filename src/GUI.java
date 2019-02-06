@@ -12,16 +12,17 @@ import javafx.stage.Stage;
 
 public class GUI extends Application {
 
-    private String text;
-    private int delay;
-    private int amount;
+    private String textToPrint;
+    private int delayToPrint;
+    private int amountToPrint;
     private boolean running = false;
+    private Spam spam;
 
     public void start(Stage stage){
         BorderPane borderPane = new BorderPane();
         stage.setTitle("SpamBot");
         Button startButton = new Button("Start Spamming");
-        Button stopButton = new Button("Stop Spamming");
+        Button stopButton = new Button("Stop Program");
         HBox hbox = new HBox();
         HBox spacing = new HBox();
         HBox buttons = new HBox();
@@ -52,29 +53,34 @@ public class GUI extends Application {
         stage.show();
 
         startButton.setOnAction(event -> {
-            this.text = textTextField.getText();
-            this.amount = Integer.parseInt(amountTextField.getText());
-            this.delay = Integer.parseInt(delayTextField.getText());
             running = true;
-            System.out.println("startbutton");
+            while (running) {
+                this.textToPrint = textTextField.getText();
+                this.amountToPrint = Integer.parseInt(amountTextField.getText());
+                this.delayToPrint = Integer.parseInt(delayTextField.getText());
+                spam = new Spam();
+                spam.newestSpam(amountToPrint, delayToPrint, textToPrint);
+                System.out.println("startbutton");
+            }
         });
         stopButton.setOnAction(event -> { running = false;
             System.out.println("stopbutton"); });
+//            System.exit(0);
     }
 
     public void startGui() {
         launch(GUI.class);
     }
     public String getText() {
-        return text;
+        return textToPrint;
     }
 
     public int getDelay() {
-        return delay;
+        return delayToPrint;
     }
 
     public int getAmount() {
-        return amount;
+        return amountToPrint;
     }
 
     public boolean getRunnig(){

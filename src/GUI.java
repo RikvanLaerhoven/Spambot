@@ -26,17 +26,19 @@ public class GUI extends Application {
         stage.setTitle("SpamBot");
         Button startButton = new Button("Start Spamming");
         Button stopButton = new Button("Stop Program");
+        Button tableFlipButton = new Button("Tableflip");
         HBox hbox = new HBox();
         HBox spacing = new HBox();
         HBox buttons = new HBox();
         VBox delay = new VBox();
         VBox text = new VBox();
         VBox amount = new VBox();
-        Image image = new Image("file:trollface.jpg");
-        ImageView imageView = new ImageView(image);
-        TextField delayTextField = new TextField();
+        Image imageTrollface = new Image("file:trollface.jpg");
+        Image imageUglyFace = new Image("file:WhatsApp Image 2019-02-02 at 02.15.26.jpeg");
+        ImageView imageView = new ImageView(imageTrollface); //hier kan de foto veranderd worden.
+        TextField delayTextField = new TextField("1000");
         TextField textTextField = new TextField();
-        TextField amountTextField = new TextField();
+        TextField amountTextField = new TextField("100");
         hbox.setSpacing(190);
         hbox.getChildren().addAll(new Label("Text"),new Label("Amount"),new Label("Delay"));
         spacing.getChildren().addAll(text, amount, delay);
@@ -44,7 +46,7 @@ public class GUI extends Application {
         buttons.getChildren().add(startButton);
         imageView.setFitHeight(500);
         imageView.setFitWidth(500);
-        delay.getChildren().addAll(delayTextField, startButton);
+        delay.getChildren().addAll(delayTextField, tableFlipButton, startButton);
         text.getChildren().addAll(textTextField, stopButton);
         amount.getChildren().add(amountTextField);
         borderPane.setCenter(hbox);
@@ -66,9 +68,18 @@ public class GUI extends Application {
                 System.out.println("startbutton");
            // }
         });
+
         stopButton.setOnAction(event -> { running = false;
-            System.out.println("stopbutton"); });
-//            System.exit(0);
+            System.out.println("stopbutton");
+        });
+
+        tableFlipButton.setOnAction(event -> {
+            running = true;
+            this.amountToPrint = Integer.parseInt(amountTextField.getText());
+            this.delayToPrint = Integer.parseInt(delayTextField.getText());
+            spam = new Spam();
+            spam.tableflip(amountToPrint,delayToPrint);
+        });
     }
 
     public void startGui() {

@@ -287,7 +287,7 @@ public class Spam {
                         r.keyPress(KeyEvent.VK_SLASH);
                         break;
                     case '@':
-                        r.keyPress(KeyEvent.VK_AT);
+                        r.keyPress(KeyEvent.VK_AT);//werkt niet!!!
                         break;
                     case '_':
                         r.keyPress(KeyEvent.VK_UNDERSCORE);
@@ -340,6 +340,17 @@ public class Spam {
                     case '0':
                         r.keyPress(KeyEvent.VK_0);
                         break;
+                    case '%':
+                        r.keyPress(KeyEvent.VK_P);
+                        r.keyPress(KeyEvent.VK_R);
+                        r.keyPress(KeyEvent.VK_O);
+                        r.keyPress(KeyEvent.VK_C);
+                        r.keyPress(KeyEvent.VK_E);
+                        r.keyPress(KeyEvent.VK_N);
+                        r.keyPress(KeyEvent.VK_T);
+                    case '&':
+                        r.keyPress(KeyEvent.VK_AMPERSAND);
+                        break;
                 }
             }
             r.keyPress(KeyEvent.VK_ENTER);
@@ -381,7 +392,7 @@ public class Spam {
 
         try {
             r = new Robot();
-            for (int i = 0; i < 25; i++){
+            for (int i = 0; i < 30; i++){
                 switch (i){
                     case 1:
                         singleSend("dus jasper heeft et ook hardop aanstaan in dora de xplora - locosam");
@@ -391,26 +402,27 @@ public class Spam {
                         break;
                     case 3:
                         singleSend("the squad needs you soldier - the senate");
+                        break;
                     case 4:
                         singleSend("sommige hebben een wasmachine en een magnetron in een, andere een tv en een router - rocketmannnnnnn");
                         break;
                     case 6:
-                        singleSend("als je panja van de ranja bent -wessel");
+                        singleSend("als je panja van de ranja bent - wessel");
                         break;
                     case 7:
-                        singleSend("werkt een for niet gebruik een while, werkt een for wel gebruik dan nogsteeds een while. -java 101 met tech support ties");
+                        singleSend("werkt een for niet gebruik een while, werkt een for wel gebruik dan nogsteeds een while. - java 101 met tech support ties");
                         break;
                     case 8:
                         singleSend("arie is een goeie naam voor een array - jeroen en jasper");
                         break;
                     case 9:
-                        singleSend("if the problem can't be solved, delete it! -daphne");
+                        singleSend("if the problem can't be solved, delete it! - daphne");
                         break;
                     case 10:
                         singleSend("ik heb de grootste - jasper");
                         break;
                     case 11:
-                        singleSend("klinkt interessant, gaan we niet doen -the rikkert");
+                        singleSend("klinkt interessant, gaan we niet doen - the rikkert");
                         break;
                     case 12:
                         singleSend("alles ge-automatiseerd, zelfs mn relatie - jasper");
@@ -428,7 +440,7 @@ public class Spam {
                         singleSend("hier een oogbal daar een voetje, hé is dat nou je buurvrouws hoedje? - onkel adolf");
                         break;
                     case 17:
-                        singleSend("priempie?! - the senate  de autiest");
+                        singleSend("priempie?! - the senate en de autiest");
                         break;
                     case 18:
                         singleSend("forget a relationship i cant even hold a conversation - cinque");
@@ -437,7 +449,7 @@ public class Spam {
                         singleSend("schoonheid zit aan de binnekant, vooral bij lelijke mensen - mart-jan & onkel adolf");
                         break;
                     case 20:
-                        singleSend("p&oshit - Jeroen");
+                        singleSend("zo een spambot is echt geweldig om te hebben - the rikkert");
                         break;
                     case 21:
                         singleSend("als ge ut niet meer wit, pur of kit - beunhaas");
@@ -458,16 +470,16 @@ public class Spam {
                         singleSend("life is like a box of chocolats - forest gump");
                         break;
                     case 27:
-                        singleSend("");
+                        singleSend("als je je string niet op tijd kan laten zakken, zul je je poep in twee stukken kakken - the rikkert");
                         break;
                     case 28:
-                        singleSend("");
+                        singleSend("ik ben nog maagd - daphne");
                         break;
                     case 29:
-                        singleSend("");
+                        singleSend("ik heb nog nooit gezoend - daphne");
                         break;
                     case 30:
-                        singleSend("");
+                        singleSend("wilt iemand mijn vriend worden? - daphne");
                         break;
                 }
                 r.keyPress(KeyEvent.VK_ENTER);

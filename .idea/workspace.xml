@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b6187e-f0fc-41a5-88e1-7c99a40fc095" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TypeBot/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TypeBot/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TypeBot/Spam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TypeBot/Spam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OldMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Spam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spam.java" afterDir="false" />
     </list>
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,15 +30,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state>
+              <caret selection-end-line="11" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#start#0;class#GUI#0" />
+                <element signature="e#3110#3144#1" />
                 <element signature="e#3300#3301#0" expanded="true" />
-                <element signature="e#3364#3365#0" expanded="true" />
-                <element signature="e#3428#3429#0" expanded="true" />
-                <element signature="e#3494#3495#0" expanded="true" />
+                <element signature="e#3173#3208#1" />
+                <element signature="e#3369#3370#0" expanded="true" />
+                <element signature="e#3236#3272#1" />
+                <element signature="e#3433#3434#0" expanded="true" />
+                <element signature="e#3301#3338#1" />
+                <element signature="e#3499#3500#0" expanded="true" />
                 <element signature="e#3393#3394#0" expanded="true" />
+                <element signature="n#!!block;n#getRunnig#0;n#GUI#0" />
                 <element signature="e#3423#3424#0" expanded="true" />
               </folding>
             </state>
@@ -50,12 +53,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Spam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-638">
-              <caret line="159" column="42" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
+            <state relative-caret-position="476">
+              <caret line="314" column="1" lean-forward="true" selection-start-line="314" selection-start-column="1" selection-end-line="314" selection-end-column="1" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#Spam#1;class#Spam#0" />
+                <element signature="method#start#0;class#Spam#0" />
                 <element signature="method#newestSpam#0;class#Spam#0" />
-                <element signature="method#SecondSpam#0;class#Spam#0" />
+                <element signature="method#SingleSend#0;class#Spam#0" />
+                <element signature="method#stringToCharacterlist#0;class#Spam#0" />
+                <element signature="method#tableflip#0;class#Spam#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OldMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+              <folding>
+                <element signature="method#SecondSpam#0;class#OldMethods#0" />
+                <element signature="method#stringToCharacterlist#0;class#OldMethods#0" />
+                <element signature="method#FirstLoopSpam#0;class#OldMethods#0" />
               </folding>
             </state>
           </provider>
@@ -78,6 +98,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Keychecker.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/OldMethods.java" />
         <option value="$PROJECT_DIR$/src/GUI.java" />
         <option value="$PROJECT_DIR$/src/Spam.java" />
       </list>
@@ -117,7 +138,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549530995591" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549531223552" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -168,18 +189,18 @@
       <workItem from="1549446045552" duration="369000" />
       <workItem from="1549482610046" duration="621000" />
       <workItem from="1549525558300" duration="22000" />
-      <workItem from="1549527828224" duration="3202000" />
+      <workItem from="1549527828224" duration="3899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36614000" />
+    <option name="totallyTimeSpent" value="37311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -261,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -271,28 +292,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        <state>
+          <caret selection-end-line="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#GUI#0" />
+            <element signature="e#3110#3144#1" />
             <element signature="e#3300#3301#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
+            <element signature="e#3173#3208#1" />
+            <element signature="e#3369#3370#0" expanded="true" />
+            <element signature="e#3236#3272#1" />
+            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#3301#3338#1" />
+            <element signature="e#3499#3500#0" expanded="true" />
             <element signature="e#3393#3394#0" expanded="true" />
+            <element signature="n#!!block;n#getRunnig#0;n#GUI#0" />
             <element signature="e#3423#3424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OldMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+          <folding>
+            <element signature="method#SecondSpam#0;class#OldMethods#0" />
+            <element signature="method#stringToCharacterlist#0;class#OldMethods#0" />
+            <element signature="method#FirstLoopSpam#0;class#OldMethods#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="159" column="42" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
+        <state relative-caret-position="476">
+          <caret line="314" column="1" lean-forward="true" selection-start-line="314" selection-start-column="1" selection-end-line="314" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#Spam#1;class#Spam#0" />
+            <element signature="method#start#0;class#Spam#0" />
             <element signature="method#newestSpam#0;class#Spam#0" />
-            <element signature="method#SecondSpam#0;class#Spam#0" />
+            <element signature="method#SingleSend#0;class#Spam#0" />
+            <element signature="method#stringToCharacterlist#0;class#Spam#0" />
+            <element signature="method#tableflip#0;class#Spam#0" />
           </folding>
         </state>
       </provider>

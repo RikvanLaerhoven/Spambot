@@ -85,6 +85,7 @@ public class GUI extends Application {
     public void startGui() {
         launch(GUI.class);
     }
+
     public String getText() {
         return textToPrint;
     }

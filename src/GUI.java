@@ -27,6 +27,8 @@ public class GUI extends Application {
         Button startButton = new Button("Start Spamming");
         Button stopButton = new Button("Stop Program");
         Button tableFlipButton = new Button("Tableflip");
+        Button serieSpam = new Button("Spam + 1");
+        Button quotes = new Button("Quotes");
         HBox hbox = new HBox();
         HBox spacing = new HBox();
         HBox buttons = new HBox();
@@ -36,7 +38,7 @@ public class GUI extends Application {
         Image imageTrollface = new Image("file:trollface.jpg");
         Image imageUglyFace = new Image("file:WhatsApp Image 2019-02-02 at 02.15.26.jpeg");
         ImageView imageView = new ImageView(imageTrollface); //hier kan de foto veranderd worden.
-        TextField delayTextField = new TextField("1000");
+        TextField delayTextField = new TextField("1500");
         TextField textTextField = new TextField();
         TextField amountTextField = new TextField("100");
         hbox.setSpacing(190);
@@ -48,7 +50,7 @@ public class GUI extends Application {
         imageView.setFitWidth(500);
         delay.getChildren().addAll(delayTextField, tableFlipButton, startButton);
         text.getChildren().addAll(textTextField, stopButton);
-        amount.getChildren().add(amountTextField);
+        amount.getChildren().addAll(amountTextField, serieSpam, quotes);
         borderPane.setCenter(hbox);
         borderPane.setBottom(spacing);
         borderPane.setTop(imageView);
@@ -79,6 +81,23 @@ public class GUI extends Application {
             this.delayToPrint = Integer.parseInt(delayTextField.getText());
             spam = new Spam();
             spam.tableflip(amountToPrint,delayToPrint);
+        });
+        serieSpam.setOnAction(event -> {
+            running = true;
+            //while (running) {
+            this.amountToPrint = Integer.parseInt(amountTextField.getText());
+            this.delayToPrint = Integer.parseInt(delayTextField.getText());
+            spam = new Spam();
+//            spam.singleSend("even mijn spambot in de betatest");
+            spam.spamCounter(amountToPrint,delayToPrint);
+
+            System.out.println("startbutton");
+            // }
+        });
+        quotes.setOnAction(event -> {
+            this.delayToPrint = Integer.parseInt(delayTextField.getText());
+            spam = new Spam();
+            spam.masterQuotes(delayToPrint);
         });
     }
 
